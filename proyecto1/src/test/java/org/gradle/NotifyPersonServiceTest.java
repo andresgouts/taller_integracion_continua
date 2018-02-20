@@ -24,7 +24,7 @@ public class NotifyPersonServiceTest {
 	@Test
 	public void notifyTest() {
 		//Arrange
-		Person person = new PersonTestDataBuilder().whitName("julian").build();
+		Person person = new PersonTestDataBuilder().whitName("julian").whitLastName("Gomez").build();
 		//Act
 		String message = notifyPersonService.notify(person);
 		//Assert

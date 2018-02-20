@@ -11,7 +11,7 @@ public class NotifyPersonService {
 	}
 	
 	public String notify(Person person) {
-		String message = "Buen dia " + person.getName();
+		String message = "Buen dia " + person.getName() + " " +  person.getLastName();
 		return emailService.sendMail(message);
 	}
 	
